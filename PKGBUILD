@@ -7,7 +7,8 @@ arch=('x86_64')
 url="https://www.unifiedremote.com"
 license=('custom: UNIFIED INTENTS')
 options=('!strip')
-depends=("systemd")
+depends=("libx11" "libxext")
+optdepends=("libstdc++5")
 source=("https://www.unifiedremote.com/static/builds/server/linux-x64/734/${_pkgname}-${pkgver}.deb")
 md5sums=('f8bf2ece6c2d2cf8c3968afe620bfb67')
 
