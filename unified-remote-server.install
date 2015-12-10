@@ -2,7 +2,8 @@ post_install() {
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 echo "
   The way to start the server is:
-  systemctl start urserver or Kaos Menu>Internet>Unified Remote
+  systemctl start urserver (or) 
+  menu>Internet>Unified Remote
 
   For more options:
   /opt/urserver/urserver --help
@@ -20,5 +21,4 @@ post_upgrade() {
 
 post_remove() {
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
-  urserver-autostart.desktop -q -t -f /opt/urserver/
 }
