@@ -1,18 +1,16 @@
 post_install() {
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 echo "
-  The simplest way to start the server is:
-  /opt/urserver/urserver --daemon
-
-  add the above line to a startup script etc.
+  The way to start the server is:
+  systemctl start urserver or Kaos Menu>Internet>Unified Remote
 
   For more options:
   /opt/urserver/urserver --help
 
-  See link for port configurations:
+  link for port configurations:
   http://wiki.unifiedremote.com/wiki/Configuration:Routers_and_Ports
 
-  Configure server from a browser:
+  To Run Config Wizard, Visit in your browser:
   localhost:9510/web"
 }
 
@@ -22,4 +20,5 @@ post_upgrade() {
 
 post_remove() {
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
+  urserver-autostart.desktop -q -t -f /opt/urserver/
 }
