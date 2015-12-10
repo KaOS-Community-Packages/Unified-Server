@@ -18,6 +18,6 @@ Install with kcp:
 kcp -i unified-remote-server
 ```
 
-Run Setup Wizard
+To Run Config Wizard, Visit in your browser
 <br>
-<a href="http://localhost:9510/web/">Unified Remote Server</a>
+<a href="http://localhost:9510/web/">http://localhost:9510/web/</a>
