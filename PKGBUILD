@@ -2,8 +2,7 @@ pkgname=unified-remote-server
 _pkgname=urserver
 pkgver=3.3.4.734
 pkgrel=1
-pkgdesc='Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.
-  * App available for Android, iOS, and Windows Phone.'
+pkgdesc='Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.'
 arch=('x86_64')
 url="https://www.unifiedremote.com"
 license=('Unified Intents AB')
