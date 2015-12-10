@@ -1,4 +1,4 @@
-# Unified-Server
+# Unified-Remote-Server
 The one-and-best remote for your computer.
 
 Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.
