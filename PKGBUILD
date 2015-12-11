@@ -9,7 +9,7 @@ license=('Unified Intents AB')
 install=$pkgname.install
 depends=("libx11" "libxext" "libstdc++5")
 optdepends=('bluez' 'bluez-libs: To Enable the Bluetooth Protocol')
-source=("https://www.unifiedremote.com/static/builds/server/linux-x64/734/${_pkgname}-${pkgver}.deb" "urserver.service")
+source=("https://www.unifiedremote.com/static/builds/server/linux-x64/734/${_pkgname}-${pkgver}.deb")
 md5sums=('f8bf2ece6c2d2cf8c3968afe620bfb67')
 
 package() {
