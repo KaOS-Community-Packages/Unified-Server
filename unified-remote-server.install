@@ -8,13 +8,13 @@ echo "
   menu>Internet>Unified Remote
 
   To Run Config Wizard, Visit in your browser:
-  localhost:9510/web"
+  localhost:9510/web
 
    link for port configurations:
   http://wiki.unifiedremote.com/wiki/Configuration:Routers_and_Ports
 
    For more options:
-  /opt/urserver/urserver --help
+  /opt/urserver/urserver --help"
 }
 
 post_upgrade() {
