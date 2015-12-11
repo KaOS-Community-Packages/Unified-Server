@@ -1,18 +1,20 @@
 post_install() {
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 echo "
-  The way to start the server is:
-  systemctl start urserver (or) 
+   The way to start the server is:
+  /opt/urserver/urserver --daemon 
+
+   to start automatically, run
   menu>Internet>Unified Remote
-
-  For more options:
-  /opt/urserver/urserver --help
-
-  link for port configurations:
-  http://wiki.unifiedremote.com/wiki/Configuration:Routers_and_Ports
 
   To Run Config Wizard, Visit in your browser:
   localhost:9510/web"
+
+   link for port configurations:
+  http://wiki.unifiedremote.com/wiki/Configuration:Routers_and_Ports
+
+   For more options:
+  /opt/urserver/urserver --help
 }
 
 post_upgrade() {
