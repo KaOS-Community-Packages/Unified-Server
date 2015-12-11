@@ -10,7 +10,7 @@ install=$pkgname.install
 depends=("libx11" "libxext" "libstdc++5")
 optdepends=('bluez' 'bluez-libs: To Enable the Bluetooth Protocol')
 source=("https://www.unifiedremote.com/static/builds/server/linux-x64/734/${_pkgname}-${pkgver}.deb" "urserver.service")
-md5sums=('f8bf2ece6c2d2cf8c3968afe620bfb67' '4137536d9b6171e30d311ab32da2d029')
+md5sums=('f8bf2ece6c2d2cf8c3968afe620bfb67')
 
 package() {
   cd "${srcdir}"
@@ -30,7 +30,4 @@ package() {
 	chmod 755 "${pkgdir}/opt/urserver/urserver"
 	chmod 755 "${pkgdir}/opt/urserver/urserver-start"
 	chmod 755 "${pkgdir}/opt/urserver/urserver-stop"
-    
-	# add service systemd
-        install -Dm644 "urserver.service" "$pkgdir/usr/lib/systemd/system/urserver.service"
 }
