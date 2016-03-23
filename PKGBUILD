@@ -1,7 +1,7 @@
 pkgname=unified-remote-server
 _pkgname=urserver
-pkgver=3.3.4.734
-pkgrel=2
+pkgver=3.3.5.738
+pkgrel=1
 pkgdesc='Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.'
 arch=('x86_64')
 url="https://www.unifiedremote.com"
@@ -9,9 +9,9 @@ license=('Unified Intents AB')
 install=$pkgname.install
 depends=("libx11" "libxext" "libstdc++5")
 optdepends=('bluez' 'bluez-libs: To Enable the Bluetooth Protocol')
-source=("https://www.unifiedremote.com/static/builds/server/linux-x64/734/${_pkgname}-${pkgver}.deb")
-md5sums=('f8bf2ece6c2d2cf8c3968afe620bfb67')
-
+source=("https://www.unifiedremote.com/static/builds/server/linux-x64/${pkgver/*./}/${_pkgname}-${pkgver}.deb")
+md5sums=('c6bc60afaba0b24e86135e4f9a7e4733')
+# https://www.unifiedremote.com/download/linux-x64-deb
 package() {
   cd "${srcdir}"
 
