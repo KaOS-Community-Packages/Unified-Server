@@ -11,7 +11,7 @@ depends=("libx11" "libxext" "libstdc++5")
 optdepends=('bluez' 'bluez-libs: To Enable the Bluetooth Protocol')
 source=("https://www.unifiedremote.com/static/builds/server/linux-x64/${pkgver/*./}/${_pkgname}-${pkgver}.deb")
 md5sums=('c6bc60afaba0b24e86135e4f9a7e4733')
-# https://www.unifiedremote.com/download/linux-x64-deb
+
 package() {
   cd "${srcdir}"
 
