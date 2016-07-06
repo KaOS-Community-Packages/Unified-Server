@@ -1,4 +1,4 @@
-# Unified-Remote-Server
+# URServer
 The one-and-best remote for your computer.
 
 Unified Remote Server for Linux. Easily the best way of controlling your PC from your smartphone.
@@ -14,7 +14,7 @@ Unified Remote Server for Linux. Easily the best way of controlling your PC from
 Install with kcp:
 
 ```
-kcp -i unified-remote-server
+kcp -i urserver
 ```
 
 To Run Config Wizard, Visit in your browser
